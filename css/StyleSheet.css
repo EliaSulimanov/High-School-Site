@@ -1,0 +1,305 @@
+﻿body
+{
+	background-image: url('../img/bg2.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family: Arial;
+	}
+	
+	
+#logo
+{
+	background-position: 50% 0%;
+	background-image: url('../img/logo.jpg');
+	background-repeat: no-repeat;
+	width: 400px;
+	height: 300px;
+	text-align: left;
+}	
+	
+	
+/*
+* התפריט
+* הראשי
+* שלמעלה
+*/
+
+
+
+
+#link:hover
+{
+    background-color: #D3D3D3;
+    text-align: center;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+#link2:hover
+{
+    background-color: #DCDCDC;
+    text-align: center;
+    text-decoration: none;
+}
+
+.topMenu
+{
+    text-align: center;
+    text-decoration: none;
+    font-size: x-large; 
+    color: Navy;
+    
+    background:rgba(192,192,192, 0.5);
+    /* אינטרנט אקספלורר*/             
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99C0C0C0 , endColorstr=#99C0C0C0);
+    /* פיירפוקס*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99C0C0C0 , endColorstr=#99C0C0C0)";
+}
+.topMenu2
+{
+    text-align: center;
+    text-decoration: none; 
+    color: Navy;
+    
+    background:rgba(192,192,192, 0.5);
+    /* אינטרנט אקספלורר  */          
+	/filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99C0C0C0 , endColorstr=#99C0C0C0);
+    /* פיירפוקס*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99C0C0C0 , endColorstr=#99C0C0C0)";
+}
+
+
+.topMenuText
+{
+	text-align: center;
+    text-decoration: none;
+    font-size: x-large; 
+    color: Navy;
+}
+
+.topMenuText2
+{
+    text-align: center;
+    text-decoration: none; 
+    color: Navy;
+}
+
+
+/*
+* סוף
+* התפריט
+* הראשי
+* שלמעלה
+*/
+
+
+
+
+/*
+* החלק
+* התחתון
+*/
+
+
+
+
+.down
+{
+    text-align: center;
+    font-size: small;
+    color: White;
+}
+
+
+.downLink
+{
+	 color:White;
+	 text-decoration: none;
+}
+
+#footer
+{
+	background-position: 50% 0%;
+	width: auto;
+	color: Red;
+	background-image: url(../img/footer/footer.png);
+	background-repeat: no-repeat;
+}
+
+
+
+/*
+* סוף
+* החלק
+* התחתון
+*/
+
+
+
+
+
+
+/*
+* כותרות
+*/
+
+
+
+.tutorialHead
+{
+  color: Lime;   
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large
+}
+
+.hello
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-large;
+	color: #00FFFF;
+	text-align: center;
+}
+
+
+/*
+* סוף
+* כותרות
+*/
+
+
+
+
+
+
+/*
+* טקסט
+* בגוף
+*/
+
+
+.indexText1
+{
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: medium;
+	color: #800000;
+	font-style: normal;
+	font-weight: bold;
+}
+
+.tutorialBody
+{
+  color: black;   
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/*
+* סוף
+* טקסט
+* בגוף
+*/
+
+
+
+
+
+.bigTable
+{
+    background:rgba(192, 192, 192, 0.6);
+    /* אינטרנט אקספלורר*/             
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99C0C0C0 , endColorstr=#99C0C0C0);
+    /* פיירפוקס*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99C0C0C0 , endColorstr=#99C0C0C0)";
+	text-align:center;
+}
+
+
+/*
+* גלריה
+*/
+
+
+
+.galer
+{
+	opacity: 0.2;
+	filter: rgba(opacity=20);
+}
+#galer:hover
+{
+    opacity: 1.0;
+    filter: rgba(opacity=100);
+}
+
+
+
+/*
+* סוף
+* גלריה
+*/
+
+
+/*
+* מיתוסים
+*/
+
+
+.mithHadder
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: #FF00FF;
+    list-style-type: none;
+}
+.trueFalse
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: #008000;
+}
+.mithdisc
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*
+* סוף
+* מיתוסים
+*/
+
+
+
+/*
+* טיפים
+*/
+.tipsHead
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: large;
+	font-weight: bold;
+	color: #FFFF00;
+}
+.tipsBigHead
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-large;
+	font-weight: bold;
+	color: #FFFF00;
+}
+.tipsBody
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: medium;
+	font-weight: bold;
+}

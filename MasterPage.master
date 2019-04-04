@@ -1,0 +1,205 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>אורח חיים בריא - ריצה</title>
+    <link href="css/StyleSheet.css" type="text/css" rel="Stylesheet" rev="Stylesheet" />
+    
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <img src="img/b87ec994-7a85-4b9a-a2b9-7446980ed20d.png" 
+        alt="אורט עפולה הצלחה עם תעודות" 
+        style="height: 37px; width: 221px; float: left;" />
+</head>
+<body>
+<!--הלוגו-->
+        <center>
+        <div id="logo"></div>
+        </center>
+<!--הסוף של הלוגו-->
+        <table style="width:50%;" align="center" dir="rtl">
+        <tr>
+        <td>
+        </td>
+        <td align="center">
+        <!--<div id="logo"></div>-->
+        </td>
+        <td>
+        &nbsp
+        </td>
+        </tr>
+        <tr>
+        <td colspan="3" align="center">
+        <!--<img src="img/b87ec994-7a85-4b9a-a2b9-7446980ed20d.png" alt="אורט עפולה הצלחה עם תעודות" />-->
+        </td>
+        </tr>
+            <tr>
+                <td id="link" class="topMenu"><a href="index.aspx" class="topMenuText">
+                    ראשי
+                    </a></td>
+                
+                <!--פאנל לאורח-->
+                
+                <%if (Session["login"] == null)
+                  {
+                      Response.Write("<td id=link class=topMenu>");
+                    Response.Write("<a href=register.aspx class=topMenuText>");
+                    Response.Write("הרשמה");
+                    Response.Write("</a>");
+                    Response.Write("</td>");
+                    Response.Write("<td id=link class=topMenu>");
+                    Response.Write("<a href=login.aspx class=topMenuText>");
+                    Response.Write("התחברות");
+                    Response.Write("</a>");
+                    Response.Write("</td>");
+                  } %>
+
+
+                <!--סיום פאנל לאורח-->
+                
+                <!--פאנל לרשום-->
+                <%if (Session["login"] != null)
+                  {
+                    Response.Write("<td id=link class=topMenu>");
+                    Response.Write("<a href=gallery.aspx class=topMenuText>");
+                    Response.Write("גלריה");
+                    Response.Write("</a>");
+                    Response.Write("</td>");
+                    Response.Write("<td id=link class=topMenu>");
+                    Response.Write("<a href=links.aspx class=topMenuText>");
+                    Response.Write("קישורים שימושיים");
+                    Response.Write("</a>");
+                    Response.Write("</td>");
+                    Response.Write("<tr>");
+                    Response.Write("<td id=link class=topMenu>");
+                    Response.Write("<a href=seker.aspx class=topMenuText>");
+                    Response.Write("סקר");
+                    Response.Write("</a>");
+                    Response.Write("</td>");
+                    Response.Write("<td id=link class=topMenu>");
+                    Response.Write("<a href=userpanel.aspx class=topMenuText>");
+                    Response.Write("פאנל למשתמש");
+                    Response.Write("</a>");
+                    Response.Write("</td>");
+                    Response.Write("<td id=link class=topMenu>");
+                    Response.Write("<a href=logout.aspx class=topMenuText>");
+                    Response.Write("התנתק/י");
+                    Response.Write("</a>");
+                    Response.Write("</td>");
+                    Response.Write("</tr>");
+                      
+                    Response.Write("<tr>");
+                    Response.Write("<td id=link2 class=topMenu2>");
+                    Response.Write("<a href=tips.aspx class=topMenuText2>");
+                    Response.Write("טיפים");
+                    Response.Write("</a>");
+                    Response.Write("</td>");
+                    Response.Write("<td id=link2 class=topMenu2>");
+                    Response.Write("<a href=miths.aspx class=topMenuText2>");
+                    Response.Write("מיתוסים על כושר");
+                    Response.Write("</a>");
+                    Response.Write("</td>");
+                    Response.Write("<td id=link2 class=topMenu2>");
+                    Response.Write("<a href=food.aspx class=topMenuText2>");
+                    Response.Write("אוכל בריא");
+                    Response.Write("</a>");
+                    Response.Write("</td>");
+                    Response.Write("</tr>");
+                  } %>
+                <!--סיום פאנל לרשום-->
+                
+                <!--פאנל למנהל-->
+                <%if (Session["admin"] != null)
+                  {
+                                      
+                      Response.Write("<td id=link class=topMenu>");
+                      Response.Write("<a href=admin.aspx class=topMenuText>");
+                      Response.Write("דף הניהול שלך");
+                      Response.Write("</a>");
+                      Response.Write("</td>");
+                      Response.Write("<td id=link class=topMenu>");
+                      Response.Write("<a href=adminUsersList.aspx class=topMenuText>");
+                      Response.Write("רשימת משתמשים");
+                      Response.Write("</a>");
+                      Response.Write("</td>");
+                      Response.Write("<td id=link class=topMenu>");
+                      Response.Write("<a href=adminIndexUpdate.aspx class=topMenuText>");
+                      Response.Write("עדכון הדף הראשי");
+                      Response.Write("</a>");
+                      Response.Write("</td>");
+                    
+                  } %>
+                  <!--סיום פאנל למנהל-->
+                    
+            </tr>
+            <tr>
+                <td id="link2" class="topMenu2">
+                <a href="info.aspx" class="topMenuText2">
+                    מידע כללי על ריצה
+                    </a>
+                    </td>
+                <td id="link2" class="topMenu2">
+                <a href="forum.aspx" class="topMenuText2">
+                    פורום
+                    </a>
+                    </td>
+                <td id="link2" class="topMenu2">
+                <a href="tutorial.aspx" class="topMenuText2">
+                    מדריך לרץ המתחיל 
+                    </a>
+                    </td>
+            </tr>
+        </table>
+        
+        <p class="hello">שלום <% if (Session["login"] == null)
+          {
+              Response.Write("אורח");
+          }
+          else {
+              Response.Write(Session["login"]);                  
+              //if (Session["fname1"] != null)
+              //{
+              //    Response.Write(Session["myName"]);
+              //}
+              //else
+              //{
+              //    Response.Write(Session["fname1"]);
+              //}
+           } 
+               %>
+        </p>
+            <table class="bigTable" align="center">
+            <tr>
+            <td>
+            
+<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        
+        </td>
+        </tr>
+        </table>
+        
+        
+        <div id="footer">
+        <center>
+        <table>
+        <tr>
+        <td>
+        <p class="down">
+        האתר עוצב ונבנה ע"י אליה סולימנוב | <a href="conect.aspx" class="downLink" >צור קשר</a> | <a href="about.aspx" class="downLink" >על בונה האתר</a>
+        <br />
+        זמן שרת: <%=serverTime %>
+        <br />
+        מספר חשיפות: <%=Application["visitors"]%>
+        <br />
+        האתר נכתב בלשון זכר מטעמי נוחות, אך מופנה לשני המינים
+        </p>
+        </td>
+        </tr>
+        </table>
+        </center>
+        </div>
+</body>
+</html>
